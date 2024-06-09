@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de música</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 70%;
+      margin: auto;
+    }
+    .productos, .formulario, .resultados {
+      margin-bottom: 15px;
+    }
+    .lista-productos {
+      list-style: none;
+      padding: 0;
+    }
+    .product-item {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tienda de deportes</h1>
+    <div class="productos">
+      <h2>Agregar nuevo botin</h2>
+      <input type="text" id="marca" placeholder="Marca del botin">
+      <input type="text" id="modelo" placeholder="modelo del botin">
+      <input type="number" id="precio" placeholder="Precio del botin">
+      <input type="number" id="cantidad" placeholder="Cantidad de botines">
+      <button id="agregar">Agregar nuevo botin</button>
+      
+    </div>
+    <div class="formulario">
+      <h2>Buscar botines</h2>
+      <input type="text" id="filtro-marca" placeholder="Filtrar por marca">
+      <button id="filtrar-marca">Filtrar por marca</button>
+      <input type="text" id="filtro-modelo" placeholder="Filtrar por nombre del modelo">
+      <button id="filtrar-modelo">Filtrar por modelo</button>
+    </div>
+    <div class="resultados">
+      <h2>Resultados</h2>
+      <button id="mostrar-todos">Mostrar/Ocultar</button>
+      <ul id="lista-botines" class="lista-productos"></ul>
+      <p id="total-compra"></p>
+    </div>
+  </div>
+
+  <script src="miarchivo.js"></script>
+</body>
+</html>
